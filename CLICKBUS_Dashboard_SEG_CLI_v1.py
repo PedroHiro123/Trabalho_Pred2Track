@@ -51,7 +51,7 @@ def load_and_process_data(file_path):
         st.error("Erro: O arquivo não foi encontrado. Por favor, verifique o caminho do arquivo.")
         return None, None
 
-file_path = '/content/drive/MyDrive/dados-CLICKBUS/df_t_MODIFICADO.csv'
+file_path = 'df_t_MODIFICADO.csv'
 df, all_contacts = load_and_process_data(file_path)
 
 # 2. Inicialização do estado de sessão para o filtro
@@ -113,7 +113,7 @@ if df is not None:
         st.title(f"Monitoramento do Comportamento de Compra: {current_filter_label}")
     with col_logo:
         try:
-            image_path = '/content/drive/MyDrive/dados-CLICKBUS/ClickBus_logo.png'
+            image_path = 'ClickBus_logo.png'
             image = Image.open(image_path)
             st.image(image, width=150)
         except FileNotFoundError:
