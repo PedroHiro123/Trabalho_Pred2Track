@@ -9,8 +9,8 @@ from PIL import Image
 # -------------------------
 # Configurações
 # -------------------------
-DATA_PATH = "/content/drive/MyDrive/dados-CLICKBUS/df_t_MODIFICADO.csv"
-LOGO_PATH = "/content/drive/MyDrive/dados-CLICKBUS/ClickBus_logo.png"
+DATA_PATH = "df_t_MODIFICADO.csv"
+LOGO_PATH = "ClickBus_logo.png"
 
 st.set_page_config(layout="wide", page_title="Dashboard Estatísticas Originais")
 
