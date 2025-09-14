@@ -233,8 +233,8 @@ def get_ml_prediction_single(customer_id, df_predictions):
         return "Erro na previsão para este cliente."
 
 # --- Execução Principal do Streamlit ---
-file_path = '/content/drive/MyDrive/dados-CLICKBUS/df_t_MODIFICADO.csv'
-logo_path = '/content/drive/MyDrive/dados-CLICKBUS/ClickBus_logo.png'
+file_path = 'df_t_MODIFICADO.csv'
+logo_path = 'ClickBus_logo.png'
 
 # Recebe os dados e métricas do pré-processamento e avaliação
 df_agg, df_full, pipeline, origin_le, ml_accuracy, ml_report, y_test_filtered, y_pred, df_ml, most_common_destinations = load_and_preprocess_data(file_path)
